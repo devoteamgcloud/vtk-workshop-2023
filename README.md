@@ -13,5 +13,7 @@ In component "train_model" we lack the actual code to create and train an sklear
 
 Typically the more information available to the model, the better the predictions will be. In the table on BigQuery you can see that there is one column that is not used right now, called "furnishingstatus". This table is different from the rest and needs some preprocessing before it can be used in the training. Checkout the component process_source_data and try to change it so the model can also train on the furnishingstatus.
 
+**Note**: This change will require you to also change the prediction function at the bottom of the notebook because right now it only uses the other features and not the furnishingstatus.
+
 ## Stuck?
 We are happy to help you on your way so just give a shout :)
